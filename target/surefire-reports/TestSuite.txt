@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 9, Time elapsed: 16.421 s <<< FAILURE! - in TestSuite
+UpgradeUI.BasicInformationPageTest.navigateToBasicInformationPage  Time elapsed: 6.137 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=126.0.6478.127)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [92d008cb7bc7af1710e69bcce4d44c28, clickElement {id=f.73177C7ACAF4778C221CFE2741180054.d.8B115B35190FF5652BBA66ED3F29471F.e.59}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54052/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (92d008cb7bc7af1710e69bcce4d44c28)] -> xpath: //span[text()='Debt Consolidation']]
+Session ID: 92d008cb7bc7af1710e69bcce4d44c28
+	at UpgradeUI.BasicInformationPageTest.navigateToBasicInformationPage(BasicInformationPageTest.java:43)
+
