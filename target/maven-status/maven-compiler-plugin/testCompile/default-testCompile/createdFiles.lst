@@ -1,2 +1,3 @@
 UpgradeUI/BasicInformationPageTest.class
-UpgradeUI/UpgradeUI.class
+UpgradeAPI/UpgradeCreateUsersAPITest.class
+UpgradeAPI/UpgradeAPITest.class

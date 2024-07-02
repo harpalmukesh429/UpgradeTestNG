@@ -1,6 +1,6 @@
 package StepDefinitions.UISteps;
 
-import Pages.HomePage;
+import Pages.UI.HomePage;
 import org.testng.Assert;
 
 

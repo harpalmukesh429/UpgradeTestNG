@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <listeners>
-    <listener class-name="utilities.TestListener"/>
-  </listeners>
-  <test thread-count="5" name="BasicInformationPageTest(failed)" verbose="0">
+  <test thread-count="5" name="/Users/harpalsingh/Downloads/SeleniumCucumberBDD-master/UpgradeTestNG/src/test/java/UpgradeUI/BasicInformationPageTest.java(failed)" verbose="0">
     <classes>
       <class name="UpgradeUI.BasicInformationPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="testValidBasicInformation"/>
+          <include name="testValidBasicInformation" invocation-numbers="0"/>
           <include name="navigateToBasicInformationPage"/>
           <include name="testInValidDOB"/>
           <include name="loadProperties"/>
@@ -18,5 +15,5 @@
         </methods>
       </class> <!-- UpgradeUI.BasicInformationPageTest -->
     </classes>
-  </test> <!-- BasicInformationPageTest(failed) -->
+  </test> <!-- /Users/harpalsingh/Downloads/SeleniumCucumberBDD-master/UpgradeTestNG/src/test/java/UpgradeUI/BasicInformationPageTest.java(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

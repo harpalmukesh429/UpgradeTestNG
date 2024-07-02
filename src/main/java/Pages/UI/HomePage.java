@@ -1,9 +1,9 @@
-package Pages;
+package Pages.UI;
 
 
 import org.openqa.selenium.By;
 
-public class HomePage extends BasePage<HomePage> {
+public class HomePage extends BasePage {
     private static final By we_HomePage = By.xpath("(//header//a[@aria-label='Homepage'])[1]");
     private static final String we_MainMenu = "//span[text()='%s']";
     private static final String link_MainMenuDropDown = "//span[text()='%s']";
@@ -50,25 +50,31 @@ public class HomePage extends BasePage<HomePage> {
     }
 
     public HomePage clickHomePage() {
-        return click(we_HomePage);
+        click(we_HomePage);
+        return this;
     }
 
     public HomePage clickMainMenu(String menuName) {
-        return click(getMainMenu(menuName));
+         click(getMainMenu(menuName));
+        return this;
     }
 
     public HomePage clickMainMenuDropDown(String menuItem) {
-        return click(getMainMenuDropDown(menuItem));
+         click(getMainMenuDropDown(menuItem));
+        return this;
     }
 
     public HomePage setLoanAmount(String amount) {
-        return sendKeys(input_loanAmount, amount);
+         sendKeys(input_loanAmount, amount);
+        return this;
     }
 
     public HomePage selectLoanPurpose(String purpose) {
-        return selectFromDropdown(select_LoanPurpose, purpose);
+        selectFromDropdown(select_LoanPurpose, purpose);
+        return this;
     }
-    public void clickcheckYourRate() {
+    public HomePage clickcheckYourRate() {
         click(btn_checkYourRate);
+        return this;
     }
 }

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
-              <span class="suite-name border-skipped">All Test Suite</span>
+              <span class="suite-name border-failed">All Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
-                    <span>testng.xml</span>
+                    <span>testngUI.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,  3 skipped,  1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  3 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="UpgradeUI.BasicInformationPageTest" class="method navigator-link" hash-for-method="testValidBasicInformation(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/1981, TC01_ValidDOB)">testValidBasicInformation(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/1981, TC01_ValidDOB)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -103,12 +117,12 @@
                     <div class="method-list-content skipped suite-All_Test_Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="UpgradeUI.BasicInformationPageTest" class="method navigator-link" hash-for-method="testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/198, Please enter a valid da...)">testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/198, Please enter a valid da...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="UpgradeUI.BasicInformationPageTest" class="method navigator-link" hash-for-method="testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 07/12/198, Please enter a valid da...)">testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 07/12/198, Please enter a valid da...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="UpgradeUI.BasicInformationPageTest" class="method navigator-link" hash-for-method="testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 07/12/198, Please enter a valid da...)">testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 07/12/198, Please enter a valid da...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="UpgradeUI.BasicInformationPageTest" class="method navigator-link" hash-for-method="testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/198, Please enter a valid da...)">testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/198, Please enter a valid da...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -117,20 +131,6 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-All_Test_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
-                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-All_Test_Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="UpgradeUI.BasicInformationPageTest" class="method navigator-link" hash-for-method="testValidBasicInformation(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/1981, TC01_ValidDOB)">testValidBasicInformation(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/1981, TC01_ValidDOB)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -142,6 +142,59 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">UpgradeUI.BasicInformationPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidBasicInformation(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/1981, TC01_ValidDOB)">
+                  </a> <!-- testValidBasicInformation(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/1981, TC01_ValidDOB) -->
+                  <span class="method-name">testValidBasicInformation</span>
+                  <span class="parameters">(Harpal,Singh,2 North Central Avenue,Arizona,Phoenix,85004.0,12/07/1981,TC01_ValidDOB)</span>
+                  <div class="stack-trace">java.lang.AssertionError: user successfully navigated to Income Information Page expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at UpgradeUI.BasicInformationPageTest.testValidBasicInformation(BasicInformationPageTest.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
           <div class="suite-All_Test_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -150,19 +203,19 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/198, Please enter a valid da...)">
-                  </a> <!-- testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/198, Please enter a valid da...) -->
+                  <a name="testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 07/12/198, Please enter a valid da...)">
+                  </a> <!-- testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 07/12/198, Please enter a valid da...) -->
                   <span class="method-name">testInValidDOB</span>
-                  <span class="parameters">(Harpal,Singh,2 North Central Avenue,Arizona,Phoenix,85004.0,12/07/198,Please enter a valid date.,TC01_InValidDOB)</span>
+                  <span class="parameters">(Harpal,Singh,2 North Central Avenue,Arizona,Phoenix,85004.0,07/12/198,Please enter a valid date.,TC02_InValidDOB)</span>
                   <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=126.0.6478.127)
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.5&apos;, java.version: &apos;21.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92d008cb7bc7af1710e69bcce4d44c28, clickElement {id=f.73177C7ACAF4778C221CFE2741180054.d.8B115B35190FF5652BBA66ED3F29471F.e.59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54052/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (92d008cb7bc7af1710e69bcce4d44c28)] -&gt; xpath: //span[text()=&apos;Debt Consolidation&apos;]]
-Session ID: 92d008cb7bc7af1710e69bcce4d44c28
+Command: [8cff5ba411eb9d0d429e071560601a9b, clickElement {id=f.F9F93A3386645707BD9DF0C5D611E12F.d.AFF4AB7A05B48AB1E7754F47925B9379.e.10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62306/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8cff5ba411eb9d0d429e071560601a9b)] -&gt; xpath: //span[text()=&apos;Debt Consolidation&apos;]]
+Session ID: 8cff5ba411eb9d0d429e071560601a9b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -175,8 +228,8 @@ Session ID: 92d008cb7bc7af1710e69bcce4d44c28
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at Pages.BasePage.click(BasePage.java:52)
-	at Pages.HomePage.clickMainMenuDropDown(HomePage.java:61)
+	at Pages.UI.BasePage.click(BasePage.java:71)
+	at Pages.UI.HomePage.clickMainMenuDropDown(HomePage.java:63)
 	at StepDefinitions.UISteps.HomePageSteps.selectProductOnHomePage(HomePageSteps.java:24)
 	at UpgradeUI.BasicInformationPageTest.navigateToBasicInformationPage(BasicInformationPageTest.java:43)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -219,19 +272,19 @@ Session ID: 92d008cb7bc7af1710e69bcce4d44c28
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 07/12/198, Please enter a valid da...)">
-                  </a> <!-- testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 07/12/198, Please enter a valid da...) -->
+                  <a name="testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/198, Please enter a valid da...)">
+                  </a> <!-- testInValidDOB(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/198, Please enter a valid da...) -->
                   <span class="method-name">testInValidDOB</span>
-                  <span class="parameters">(Harpal,Singh,2 North Central Avenue,Arizona,Phoenix,85004.0,07/12/198,Please enter a valid date.,TC02_InValidDOB)</span>
+                  <span class="parameters">(Harpal,Singh,2 North Central Avenue,Arizona,Phoenix,85004.0,12/07/198,Please enter a valid date.,TC01_InValidDOB)</span>
                   <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=126.0.6478.127)
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.5&apos;, java.version: &apos;21.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92d008cb7bc7af1710e69bcce4d44c28, clickElement {id=f.73177C7ACAF4778C221CFE2741180054.d.8B115B35190FF5652BBA66ED3F29471F.e.59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54052/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (92d008cb7bc7af1710e69bcce4d44c28)] -&gt; xpath: //span[text()=&apos;Debt Consolidation&apos;]]
-Session ID: 92d008cb7bc7af1710e69bcce4d44c28
+Command: [8cff5ba411eb9d0d429e071560601a9b, clickElement {id=f.F9F93A3386645707BD9DF0C5D611E12F.d.AFF4AB7A05B48AB1E7754F47925B9379.e.10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62306/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8cff5ba411eb9d0d429e071560601a9b)] -&gt; xpath: //span[text()=&apos;Debt Consolidation&apos;]]
+Session ID: 8cff5ba411eb9d0d429e071560601a9b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -244,8 +297,8 @@ Session ID: 92d008cb7bc7af1710e69bcce4d44c28
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at Pages.BasePage.click(BasePage.java:52)
-	at Pages.HomePage.clickMainMenuDropDown(HomePage.java:61)
+	at Pages.UI.BasePage.click(BasePage.java:71)
+	at Pages.UI.HomePage.clickMainMenuDropDown(HomePage.java:63)
 	at StepDefinitions.UISteps.HomePageSteps.selectProductOnHomePage(HomePageSteps.java:24)
 	at UpgradeUI.BasicInformationPageTest.navigateToBasicInformationPage(BasicInformationPageTest.java:43)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -297,10 +350,10 @@ Session ID: 92d008cb7bc7af1710e69bcce4d44c28
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.5&apos;, java.version: &apos;21.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92d008cb7bc7af1710e69bcce4d44c28, clickElement {id=f.73177C7ACAF4778C221CFE2741180054.d.8B115B35190FF5652BBA66ED3F29471F.e.59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54052/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (92d008cb7bc7af1710e69bcce4d44c28)] -&gt; xpath: //span[text()=&apos;Debt Consolidation&apos;]]
-Session ID: 92d008cb7bc7af1710e69bcce4d44c28
+Command: [8cff5ba411eb9d0d429e071560601a9b, clickElement {id=f.F9F93A3386645707BD9DF0C5D611E12F.d.AFF4AB7A05B48AB1E7754F47925B9379.e.10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62306/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8cff5ba411eb9d0d429e071560601a9b)] -&gt; xpath: //span[text()=&apos;Debt Consolidation&apos;]]
+Session ID: 8cff5ba411eb9d0d429e071560601a9b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -313,8 +366,8 @@ Session ID: 92d008cb7bc7af1710e69bcce4d44c28
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at Pages.BasePage.click(BasePage.java:52)
-	at Pages.HomePage.clickMainMenuDropDown(HomePage.java:61)
+	at Pages.UI.BasePage.click(BasePage.java:71)
+	at Pages.UI.HomePage.clickMainMenuDropDown(HomePage.java:63)
 	at StepDefinitions.UISteps.HomePageSteps.selectProductOnHomePage(HomePageSteps.java:24)
 	at UpgradeUI.BasicInformationPageTest.navigateToBasicInformationPage(BasicInformationPageTest.java:43)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -357,36 +410,17 @@ Session ID: 92d008cb7bc7af1710e69bcce4d44c28
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-skipped -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">UpgradeUI.BasicInformationPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testValidBasicInformation(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/1981, TC01_ValidDOB)">
-                  </a> <!-- testValidBasicInformation(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/1981, TC01_ValidDOB) -->
-                  <span class="method-name">testValidBasicInformation</span>
-                  <span class="parameters">(Harpal,Singh,2 North Central Avenue,Arizona,Phoenix,85004.0,12/07/1981,TC01_ValidDOB)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
         </div> <!-- panel All_Test_Suite -->
         <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/harpalsingh/Downloads/SeleniumCucumberBDD-master/TestNGUpgrade/testng.xml</span>
+            <span class="header-content">/Users/harpalsingh/Downloads/SeleniumCucumberBDD-master/UpgradeTestNG/testngUI.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;utilities.TestListener&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;BasicInformationPageTest&quot; verbose=&quot;2&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;/Users/harpalsingh/Downloads/SeleniumCucumberBDD-master/UpgradeTestNG/src/test/java/UpgradeUI/BasicInformationPageTest.java&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;UpgradeUI.BasicInformationPageTest&quot;&gt;
         &lt;methods&gt;
@@ -395,7 +429,7 @@ Session ID: 92d008cb7bc7af1710e69bcce4d44c28
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- UpgradeUI.BasicInformationPageTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- BasicInformationPageTest --&gt;
+  &lt;/test&gt; &lt;!-- /Users/harpalsingh/Downloads/SeleniumCucumberBDD-master/UpgradeTestNG/src/test/java/UpgradeUI/BasicInformationPageTest.java --&gt;
 &lt;/suite&gt; &lt;!-- All Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -407,7 +441,7 @@ Session ID: 92d008cb7bc7af1710e69bcce4d44c28
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">BasicInformationPageTest (1 class)</span>
+                <span class="test-name">/Users/harpalsingh/Downloads/SeleniumCucumberBDD-master/UpgradeTestNG/src/test/java/UpgradeUI/BasicInformationPageTest.java (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -437,24 +471,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testValidBasicInformation')
 data.setCell(0, 2, 'UpgradeUI.BasicInformationPageTest')
-data.setCell(0, 3, 1950);
+data.setCell(0, 3, 3018);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testValidBasicInformation')
+data.setCell(1, 1, 'testInValidDOB')
 data.setCell(1, 2, 'UpgradeUI.BasicInformationPageTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testInValidDOB')
 data.setCell(2, 2, 'UpgradeUI.BasicInformationPageTest')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testInValidDOB')
+data.setCell(3, 1, 'testValidBasicInformation')
 data.setCell(3, 2, 'UpgradeUI.BasicInformationPageTest')
 data.setCell(3, 3, 0);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -487,49 +521,51 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">40 ms</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToBasicInformationPage</span>
-                <span class="method-start">707 ms</span>
+                <span class="method-start">620 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testValidBasicInformation(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 12/07/1981, TC01_ValidDOB)</span>
-                <span class="method-start">8771 ms</span>
+                <span class="method-start">9592 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">10723 ms</span>
+                <span class="method-start">12615 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">navigateToBasicInformationPage</span>
-                <span class="method-start">11008 ms</span>
+                <span class="method-start">12899 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidBasicInformation(Harpal, Singh, 2 North Central Avenue, Arizona, Phoenix, 85004.0, 07/12/1981, TC02_ValidDOB)</span>
-                <span class="method-start">14907 ms</span>
+                <span class="method-start">16970 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">14910 ms</span>
+                <span class="method-start">16971 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToBasicInformationPage</span>
-                <span class="method-start">14960 ms</span>
+                <span class="method-start">17024 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">14962 ms</span>
+                <span class="method-start">17025 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToBasicInformationPage</span>
-                <span class="method-start">14964 ms</span>
+                <span class="method-start">17025 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">14965 ms</span>
+                <span class="method-start">17026 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

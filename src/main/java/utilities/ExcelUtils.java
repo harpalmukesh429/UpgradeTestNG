@@ -6,16 +6,12 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class ExcelUtils {
-    public static void main(String[] args) {
-        getExcelData("src/TestData/testData.xlsx","InvalidDOB");
-    }
     public static List<Object[]> getExcelData(String filePath, String sheetName) {
         List<Object[]> data = new ArrayList<Object[]>();
         try {

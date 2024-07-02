@@ -1,6 +1,6 @@
 package StepDefinitions.UISteps;
 
-import Pages.IncomeInformationPage;
+import Pages.UI.IncomeInformationPage;
 
 public class IncomeInformationSteps {
     private final IncomeInformationPage incomeInformationPage;

@@ -1,4 +1,4 @@
-package Pages;
+package Pages.UI;
 
 import utilities.Browser;
 import org.openqa.selenium.By;
@@ -11,8 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public abstract class BasePage<T extends BasePage<T>> {
-    protected WebDriver driver;
+public abstract class BasePage {
+    protected static WebDriver driver;
     protected WebDriverWait wait;
 
     public BasePage() {
@@ -25,9 +25,9 @@ public abstract class BasePage<T extends BasePage<T>> {
 
     public abstract boolean pageIsDisplayed();
 
-    public T waitForPageTitle(String pageTitle) {
+    public BasePage waitForPageTitle(String pageTitle) {
         wait.until(ExpectedConditions.titleIs(pageTitle));
-        return (T) this;
+        return this;
     }
 
     public WebElement waitForElement(By locator) {
@@ -39,6 +39,15 @@ public abstract class BasePage<T extends BasePage<T>> {
             throw new RuntimeException("An unexpected error occurred while waiting for element: " + locator, e);
         }
     }
+    public WebElement waitForElement(WebElement element) {
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(element));
+        } catch (TimeoutException e) {
+            throw new RuntimeException("Element not found within the wait time: " + element, e);
+        } catch (Exception e) {
+            throw new RuntimeException("An unexpected error occurred while waiting for element: " + element, e);
+        }
+    }
     public WebElement waitForElementToBeEnabled(By locator) {
         try {
             return wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -48,14 +57,34 @@ public abstract class BasePage<T extends BasePage<T>> {
             throw new RuntimeException("An unexpected error occurred while waiting for element to be clickable: " + locator, e);
         }
     }
-    public T click(By locator) {
-        waitForElement(locator).click();
-        return (T) this;
-    }
 
+    public WebElement waitForElementToBeEnabled(WebElement element) {
+        try {
+            return wait.until(ExpectedConditions.elementToBeClickable(element));
+        } catch (TimeoutException e) {
+            throw new RuntimeException("Element not clickable within the wait time: " + element, e);
+        } catch (Exception e) {
+            throw new RuntimeException("An unexpected error occurred while waiting for element to be clickable: " + element, e);
+        }
+    }
+    public BasePage click(By locator) {
+        waitForElement(locator).click();
+        return this;
+    }
+    public BasePage click(WebElement element) {
+        waitForElement(element).click();
+        return this;
+    }
     public boolean isDisplayed(By locator) {
         try {
             return waitForElement(locator).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+    public boolean isDisplayed(WebElement element) {
+        try {
+            return waitForElement(element).isDisplayed();
         } catch (Exception e) {
             return false;
         }
@@ -69,28 +98,28 @@ public abstract class BasePage<T extends BasePage<T>> {
         }
     }
 
-    public T sendKeys(By locator, String text) {
+    public BasePage sendKeys(By locator, String text) {
         waitForElementToBeEnabled(locator).sendKeys(text);
-        return (T) this;
+        return this;
     }
 
-    public T selectFromDropdown(By locator, String value) {
+    public BasePage selectFromDropdown(By locator, String value) {
         getDropdown(locator).selectByValue(value);
-        return (T) this;
+        return this;
     }
-    public T selectFromDropdownByValue(By locator, String value) {
+    public BasePage selectFromDropdownByValue(By locator, String value) {
         getDropdown(locator).selectByValue(value);
-        return (T) this;
+        return this;
     }
 
-    public T selectFromDropdownByIndex(By locator, int index) {
+    public BasePage selectFromDropdownByIndex(By locator, int index) {
         getDropdown(locator).selectByIndex(index);
-        return (T) this;
+        return this;
     }
 
-    public T selectFromDropdownByVisibleText(By locator, String text) {
+    public BasePage selectFromDropdownByVisibleText(By locator, String text) {
         getDropdown(locator).selectByVisibleText(text);
-        return (T) this;
+        return this;
     }
     public Select getDropdown(By locator) {
         waitForElementToBeEnabled(locator);

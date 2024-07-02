@@ -36,6 +36,12 @@
             <version>5.4.0</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20240303</version>
+        </dependency>
 
         <!-- TestNG dependency -->
         <dependency>
@@ -78,6 +84,19 @@
             <artifactId>log4j-core</artifactId>
             <version>2.23.1</version>
         </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.4.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/ru.sbtqa.tag.pagefactory/page-factory-core -->
+        <dependency>
+            <groupId>ru.sbtqa.tag.pagefactory</groupId>
+            <artifactId>page-factory-core</artifactId>
+            <version>21.0.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -88,7 +107,7 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>testngUI.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <redirectTestOutputToFile>true</redirectTestOutputToFile>
                 </configuration>

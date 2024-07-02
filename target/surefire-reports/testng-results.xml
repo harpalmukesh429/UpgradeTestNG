@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="0" skipped="3">
+<testng-results ignored="0" total="4" passed="0" failed="1" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-01T22:22:47 EDT" name="All Test Suite" finished-at="2024-07-01T22:23:02 EDT" duration-ms="14953">
+  <suite started-at="2024-07-02T14:21:01 EDT" name="All Test Suite" finished-at="2024-07-02T14:21:18 EDT" duration-ms="17016">
     <groups>
     </groups>
-    <test started-at="2024-07-01T22:22:47 EDT" name="BasicInformationPageTest" finished-at="2024-07-01T22:23:02 EDT" duration-ms="14953">
+    <test started-at="2024-07-02T14:21:01 EDT" name="/Users/harpalsingh/Downloads/SeleniumCucumberBDD-master/UpgradeTestNG/src/test/java/UpgradeUI/BasicInformationPageTest.java" finished-at="2024-07-02T14:21:18 EDT" duration-ms="17016">
       <class name="UpgradeUI.BasicInformationPageTest">
-        <test-method is-config="true" signature="loadProperties()[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:22:47 EDT" name="loadProperties" finished-at="2024-07-01T22:22:47 EDT" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="loadProperties()[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:01 EDT" name="loadProperties" finished-at="2024-07-02T14:21:01 EDT" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadProperties -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:22:47 EDT" name="setUp" finished-at="2024-07-01T22:22:47 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:01 EDT" name="setUp" finished-at="2024-07-02T14:21:01 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateToBasicInformationPage()[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:22:47 EDT" name="navigateToBasicInformationPage" finished-at="2024-07-01T22:22:55 EDT" duration-ms="8063" status="PASS">
+        <test-method is-config="true" signature="navigateToBasicInformationPage()[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:02 EDT" name="navigateToBasicInformationPage" finished-at="2024-07-02T14:21:11 EDT" duration-ms="8971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToBasicInformationPage -->
-        <test-method signature="testValidBasicInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:22:55 EDT" name="testValidBasicInformation" data-provider="validDOB" finished-at="2024-07-01T22:22:57 EDT" duration-ms="1950" status="PASS">
+        <test-method signature="testValidBasicInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:11 EDT" name="testValidBasicInformation" data-provider="validDOB" finished-at="2024-07-02T14:21:14 EDT" duration-ms="3018" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -62,14 +62,57 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[user successfully navigated to Income Information Page expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: user successfully navigated to Income Information Page expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at UpgradeUI.BasicInformationPageTest.testValidBasicInformation(BasicInformationPageTest.java:60)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidBasicInformation -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:22:57 EDT" name="cleanUp" finished-at="2024-07-01T22:22:58 EDT" duration-ms="284" status="PASS">
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:14 EDT" name="cleanUp" finished-at="2024-07-02T14:21:14 EDT" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="navigateToBasicInformationPage()[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:22:58 EDT" name="navigateToBasicInformationPage" finished-at="2024-07-01T22:23:02 EDT" duration-ms="3891" status="FAIL">
+        <test-method is-config="true" signature="navigateToBasicInformationPage()[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:14 EDT" name="navigateToBasicInformationPage" finished-at="2024-07-02T14:21:18 EDT" duration-ms="4068" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
@@ -77,10 +120,10 @@
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92d008cb7bc7af1710e69bcce4d44c28, clickElement {id=f.73177C7ACAF4778C221CFE2741180054.d.8B115B35190FF5652BBA66ED3F29471F.e.59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54052/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (92d008cb7bc7af1710e69bcce4d44c28)] -> xpath: //span[text()='Debt Consolidation']]
-Session ID: 92d008cb7bc7af1710e69bcce4d44c28]]>
+Command: [8cff5ba411eb9d0d429e071560601a9b, clickElement {id=f.F9F93A3386645707BD9DF0C5D611E12F.d.AFF4AB7A05B48AB1E7754F47925B9379.e.10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62306/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8cff5ba411eb9d0d429e071560601a9b)] -> xpath: //span[text()='Debt Consolidation']]
+Session ID: 8cff5ba411eb9d0d429e071560601a9b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -88,10 +131,10 @@ Session ID: 92d008cb7bc7af1710e69bcce4d44c28]]>
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92d008cb7bc7af1710e69bcce4d44c28, clickElement {id=f.73177C7ACAF4778C221CFE2741180054.d.8B115B35190FF5652BBA66ED3F29471F.e.59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54052/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (92d008cb7bc7af1710e69bcce4d44c28)] -> xpath: //span[text()='Debt Consolidation']]
-Session ID: 92d008cb7bc7af1710e69bcce4d44c28
+Command: [8cff5ba411eb9d0d429e071560601a9b, clickElement {id=f.F9F93A3386645707BD9DF0C5D611E12F.d.AFF4AB7A05B48AB1E7754F47925B9379.e.10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62306/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8cff5ba411eb9d0d429e071560601a9b)] -> xpath: //span[text()='Debt Consolidation']]
+Session ID: 8cff5ba411eb9d0d429e071560601a9b
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -104,8 +147,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at Pages.BasePage.click(BasePage.java:52)
-at Pages.HomePage.clickMainMenuDropDown(HomePage.java:61)
+at Pages.UI.BasePage.click(BasePage.java:71)
+at Pages.UI.HomePage.clickMainMenuDropDown(HomePage.java:63)
 at StepDefinitions.UISteps.HomePageSteps.selectProductOnHomePage(HomePageSteps.java:24)
 at UpgradeUI.BasicInformationPageTest.navigateToBasicInformationPage(BasicInformationPageTest.java:43)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -148,7 +191,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToBasicInformationPage -->
-        <test-method signature="testValidBasicInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:23:02 EDT" name="testValidBasicInformation" data-provider="validDOB" finished-at="2024-07-01T22:23:02 EDT" duration-ms="1" status="SKIP">
+        <test-method signature="testValidBasicInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:18 EDT" name="testValidBasicInformation" data-provider="validDOB" finished-at="2024-07-02T14:21:18 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -198,10 +241,10 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92d008cb7bc7af1710e69bcce4d44c28, clickElement {id=f.73177C7ACAF4778C221CFE2741180054.d.8B115B35190FF5652BBA66ED3F29471F.e.59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54052/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (92d008cb7bc7af1710e69bcce4d44c28)] -> xpath: //span[text()='Debt Consolidation']]
-Session ID: 92d008cb7bc7af1710e69bcce4d44c28]]>
+Command: [8cff5ba411eb9d0d429e071560601a9b, clickElement {id=f.F9F93A3386645707BD9DF0C5D611E12F.d.AFF4AB7A05B48AB1E7754F47925B9379.e.10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62306/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8cff5ba411eb9d0d429e071560601a9b)] -> xpath: //span[text()='Debt Consolidation']]
+Session ID: 8cff5ba411eb9d0d429e071560601a9b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -209,10 +252,10 @@ Session ID: 92d008cb7bc7af1710e69bcce4d44c28]]>
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92d008cb7bc7af1710e69bcce4d44c28, clickElement {id=f.73177C7ACAF4778C221CFE2741180054.d.8B115B35190FF5652BBA66ED3F29471F.e.59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54052/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (92d008cb7bc7af1710e69bcce4d44c28)] -> xpath: //span[text()='Debt Consolidation']]
-Session ID: 92d008cb7bc7af1710e69bcce4d44c28
+Command: [8cff5ba411eb9d0d429e071560601a9b, clickElement {id=f.F9F93A3386645707BD9DF0C5D611E12F.d.AFF4AB7A05B48AB1E7754F47925B9379.e.10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62306/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8cff5ba411eb9d0d429e071560601a9b)] -> xpath: //span[text()='Debt Consolidation']]
+Session ID: 8cff5ba411eb9d0d429e071560601a9b
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -225,8 +268,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at Pages.BasePage.click(BasePage.java:52)
-at Pages.HomePage.clickMainMenuDropDown(HomePage.java:61)
+at Pages.UI.BasePage.click(BasePage.java:71)
+at Pages.UI.HomePage.clickMainMenuDropDown(HomePage.java:63)
 at StepDefinitions.UISteps.HomePageSteps.selectProductOnHomePage(HomePageSteps.java:24)
 at UpgradeUI.BasicInformationPageTest.navigateToBasicInformationPage(BasicInformationPageTest.java:43)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -269,15 +312,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidBasicInformation -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:23:02 EDT" name="cleanUp" finished-at="2024-07-01T22:23:02 EDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:18 EDT" name="cleanUp" finished-at="2024-07-02T14:21:18 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="navigateToBasicInformationPage()[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:23:02 EDT" name="navigateToBasicInformationPage" finished-at="2024-07-01T22:23:02 EDT" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToBasicInformationPage -->
-        <test-method signature="testInValidDOB(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:23:02 EDT" name="testInValidDOB" data-provider="invalidDOBdata" finished-at="2024-07-01T22:23:02 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="testInValidDOB(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:18 EDT" name="testInValidDOB" data-provider="invalidDOBdata" finished-at="2024-07-02T14:21:18 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -332,10 +371,10 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92d008cb7bc7af1710e69bcce4d44c28, clickElement {id=f.73177C7ACAF4778C221CFE2741180054.d.8B115B35190FF5652BBA66ED3F29471F.e.59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54052/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (92d008cb7bc7af1710e69bcce4d44c28)] -> xpath: //span[text()='Debt Consolidation']]
-Session ID: 92d008cb7bc7af1710e69bcce4d44c28]]>
+Command: [8cff5ba411eb9d0d429e071560601a9b, clickElement {id=f.F9F93A3386645707BD9DF0C5D611E12F.d.AFF4AB7A05B48AB1E7754F47925B9379.e.10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62306/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8cff5ba411eb9d0d429e071560601a9b)] -> xpath: //span[text()='Debt Consolidation']]
+Session ID: 8cff5ba411eb9d0d429e071560601a9b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -343,10 +382,10 @@ Session ID: 92d008cb7bc7af1710e69bcce4d44c28]]>
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92d008cb7bc7af1710e69bcce4d44c28, clickElement {id=f.73177C7ACAF4778C221CFE2741180054.d.8B115B35190FF5652BBA66ED3F29471F.e.59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54052/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (92d008cb7bc7af1710e69bcce4d44c28)] -> xpath: //span[text()='Debt Consolidation']]
-Session ID: 92d008cb7bc7af1710e69bcce4d44c28
+Command: [8cff5ba411eb9d0d429e071560601a9b, clickElement {id=f.F9F93A3386645707BD9DF0C5D611E12F.d.AFF4AB7A05B48AB1E7754F47925B9379.e.10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62306/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8cff5ba411eb9d0d429e071560601a9b)] -> xpath: //span[text()='Debt Consolidation']]
+Session ID: 8cff5ba411eb9d0d429e071560601a9b
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -359,8 +398,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at Pages.BasePage.click(BasePage.java:52)
-at Pages.HomePage.clickMainMenuDropDown(HomePage.java:61)
+at Pages.UI.BasePage.click(BasePage.java:71)
+at Pages.UI.HomePage.clickMainMenuDropDown(HomePage.java:63)
 at StepDefinitions.UISteps.HomePageSteps.selectProductOnHomePage(HomePageSteps.java:24)
 at UpgradeUI.BasicInformationPageTest.navigateToBasicInformationPage(BasicInformationPageTest.java:43)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -403,11 +442,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInValidDOB -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:23:02 EDT" name="cleanUp" finished-at="2024-07-01T22:23:02 EDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="navigateToBasicInformationPage()[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:18 EDT" name="navigateToBasicInformationPage" finished-at="2024-07-02T14:21:18 EDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToBasicInformationPage -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:18 EDT" name="cleanUp" finished-at="2024-07-02T14:21:18 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method signature="testInValidDOB(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:23:02 EDT" name="testInValidDOB" data-provider="invalidDOBdata" finished-at="2024-07-01T22:23:02 EDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="navigateToBasicInformationPage()[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:18 EDT" name="navigateToBasicInformationPage" finished-at="2024-07-02T14:21:18 EDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToBasicInformationPage -->
+        <test-method signature="testInValidDOB(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:18 EDT" name="testInValidDOB" data-provider="invalidDOBdata" finished-at="2024-07-02T14:21:18 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -462,10 +509,10 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92d008cb7bc7af1710e69bcce4d44c28, clickElement {id=f.73177C7ACAF4778C221CFE2741180054.d.8B115B35190FF5652BBA66ED3F29471F.e.59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54052/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (92d008cb7bc7af1710e69bcce4d44c28)] -> xpath: //span[text()='Debt Consolidation']]
-Session ID: 92d008cb7bc7af1710e69bcce4d44c28]]>
+Command: [8cff5ba411eb9d0d429e071560601a9b, clickElement {id=f.F9F93A3386645707BD9DF0C5D611E12F.d.AFF4AB7A05B48AB1E7754F47925B9379.e.10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62306/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8cff5ba411eb9d0d429e071560601a9b)] -> xpath: //span[text()='Debt Consolidation']]
+Session ID: 8cff5ba411eb9d0d429e071560601a9b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -473,10 +520,10 @@ Session ID: 92d008cb7bc7af1710e69bcce4d44c28]]>
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92d008cb7bc7af1710e69bcce4d44c28, clickElement {id=f.73177C7ACAF4778C221CFE2741180054.d.8B115B35190FF5652BBA66ED3F29471F.e.59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54052/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (92d008cb7bc7af1710e69bcce4d44c28)] -> xpath: //span[text()='Debt Consolidation']]
-Session ID: 92d008cb7bc7af1710e69bcce4d44c28
+Command: [8cff5ba411eb9d0d429e071560601a9b, clickElement {id=f.F9F93A3386645707BD9DF0C5D611E12F.d.AFF4AB7A05B48AB1E7754F47925B9379.e.10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/l4/chj728qd4jj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62306/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8cff5ba411eb9d0d429e071560601a9b)] -> xpath: //span[text()='Debt Consolidation']]
+Session ID: 8cff5ba411eb9d0d429e071560601a9b
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -489,8 +536,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at Pages.BasePage.click(BasePage.java:52)
-at Pages.HomePage.clickMainMenuDropDown(HomePage.java:61)
+at Pages.UI.BasePage.click(BasePage.java:71)
+at Pages.UI.HomePage.clickMainMenuDropDown(HomePage.java:63)
 at StepDefinitions.UISteps.HomePageSteps.selectProductOnHomePage(HomePageSteps.java:24)
 at UpgradeUI.BasicInformationPageTest.navigateToBasicInformationPage(BasicInformationPageTest.java:43)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -533,19 +580,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInValidDOB -->
-        <test-method is-config="true" signature="navigateToBasicInformationPage()[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:23:02 EDT" name="navigateToBasicInformationPage" finished-at="2024-07-01T22:23:02 EDT" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToBasicInformationPage -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:23:02 EDT" name="cleanUp" finished-at="2024-07-01T22:23:02 EDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:18 EDT" name="cleanUp" finished-at="2024-07-02T14:21:18 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:UpgradeUI.BasicInformationPageTest@4ed5eb72]" started-at="2024-07-01T22:23:02 EDT" name="tearDown" finished-at="2024-07-01T22:23:02 EDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UpgradeUI.BasicInformationPageTest@626c44e7]" started-at="2024-07-02T14:21:18 EDT" name="tearDown" finished-at="2024-07-02T14:21:18 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- UpgradeUI.BasicInformationPageTest -->
-    </test> <!-- BasicInformationPageTest -->
+    </test> <!-- /Users/harpalsingh/Downloads/SeleniumCucumberBDD-master/UpgradeTestNG/src/test/java/UpgradeUI/BasicInformationPageTest.java -->
   </suite> <!-- All Test Suite -->
 </testng-results>
